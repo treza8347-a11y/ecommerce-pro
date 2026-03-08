@@ -6,7 +6,8 @@ name:"Casque Bluetooth",
 price:89,
 category:"tech",
 image:"https://picsum.photos/400?1",
-description:"Casque premium avec réduction de bruit"
+description:"Casque premium réduction de bruit",
+rating:4.5
 },
 
 {
@@ -15,7 +16,8 @@ name:"Montre Connectée",
 price:129,
 category:"tech",
 image:"https://picsum.photos/400?2",
-description:"Suivi activité et santé"
+description:"Suivi santé et fitness",
+rating:4
 },
 
 {
@@ -24,7 +26,8 @@ name:"Chaussures Running",
 price:79,
 category:"sport",
 image:"https://picsum.photos/400?3",
-description:"Chaussures sport ultra confort"
+description:"Chaussures sport ultra confort",
+rating:5
 }
 
 ];
