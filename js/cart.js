@@ -1,13 +1,18 @@
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart =
+JSON.parse(localStorage.getItem("cart")) || []
 
 function addToCart(id){
 
-const product = products.find(p => p.id === id);
+const product =
+products.find(p=>p.id===id)
 
-cart.push(product);
+cart.push(product)
 
-localStorage.setItem("cart", JSON.stringify(cart));
+localStorage.setItem(
+"cart",
+JSON.stringify(cart)
+)
 
-alert("Produit ajouté au panier");
+alert("Produit ajouté au panier")
 
 }
