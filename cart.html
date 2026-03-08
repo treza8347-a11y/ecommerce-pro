@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Panier</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h1>Votre panier</h1>
+
+<div id="cartItems"></div>
+
+<h2>Total : <span id="total"></span> €</h2>
+
+<a href="checkout.html" class="btn">Checkout</a>
+
+<script src="js/cart.js"></script>
+
+<script>
+
+const container = document.getElementById("cartItems");
+
+let total = 0;
+
+cart.forEach(item=>{
+
+container.innerHTML += `<p>${item.name} - ${item.price}€</p>`;
+
+total += item.price;
+
+});
+
+document.getElementById("total").innerText = total;
+
+</script>
+
+</body>
+</html>
