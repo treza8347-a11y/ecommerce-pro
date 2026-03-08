@@ -2,11 +2,10 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MonShop</title>
+<title>Modern Shop</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -14,14 +13,13 @@
 
 <body>
 
-<header>
+<header class="header">
 
-<h1>MonShop</h1>
+<div class="logo">ModernShop</div>
 
 <nav>
 
 <a href="index.html">Accueil</a>
-<a href="shop.html">Boutique</a>
 <a href="cart.html">Panier</a>
 
 </nav>
@@ -30,14 +28,29 @@
 
 <section class="hero">
 
-<h2>La boutique des produits premium</h2>
+<h1>Produits Premium</h1>
 
-<p>Découvrez les meilleurs produits au meilleur prix</p>
-
-<a href="shop.html" class="btn">Voir la boutique</a>
+<p>Découvrez notre collection moderne</p>
 
 </section>
 
-</body>
+<section class="filters">
 
+<select id="categoryFilter">
+
+<option value="all">Toutes catégories</option>
+<option value="tech">Tech</option>
+<option value="sport">Sport</option>
+
+</select>
+
+</section>
+
+<section id="products" class="products"></section>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+
+</body>
 </html>
