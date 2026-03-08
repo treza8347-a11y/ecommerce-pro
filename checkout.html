@@ -3,13 +3,9 @@
 
 <head>
 
-<meta charset="UTF-8">
-
 <title>Checkout</title>
 
 <script src="https://js.stripe.com/v3/"></script>
-
-<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -17,20 +13,22 @@
 
 <h1>Paiement sécurisé</h1>
 
-<button id="checkout-button" class="btn">
-Payer
-</button>
+<button id="pay">Payer</button>
 
 <script>
 
-const stripe = Stripe("YOUR_STRIPE_PUBLIC_KEY");
+const stripe =
+Stripe("YOUR_PUBLIC_KEY")
 
-document.getElementById("checkout-button")
-.addEventListener("click", () => {
+document
+.getElementById("pay")
+.addEventListener("click",()=>{
 
-alert("Connexion Stripe à configurer côté serveur");
+alert(
+"Configurer Stripe côté serveur"
+)
 
-});
+})
 
 </script>
 
